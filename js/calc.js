@@ -24,7 +24,7 @@ function getNum(num) {
             break;
 
         //calculate cos
-        case 'cos';
+        case 'cos':
             document.getElementById("result").value = Math.cos(document.getElementById("result").value);
             break;
         
