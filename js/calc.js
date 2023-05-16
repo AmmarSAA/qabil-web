@@ -1,11 +1,11 @@
 function getNum(num) {
-    
+
     switch (num) {
         //clear screen
         case 'AC':
             console.log(document.getElementById('result').value = "");
             break;
-        
+
         //remove last number
         case 'C':
             var currentResult = document.getElementById("result").value;
@@ -28,7 +28,7 @@ function getNum(num) {
         case 'cos':
             console.log(document.getElementById("result").value = Math.cos(document.getElementById("result").value));
             break;
-        
+
         //calculate log
         case 'log':
             console.log(document.getElementById("result").value = Math.log(document.getElementById("result").value));
@@ -44,7 +44,7 @@ function getNum(num) {
             console.log(document.getElementById('result').value += num);
             break;
     }
-    
-    
-    
+
+
+
 }
