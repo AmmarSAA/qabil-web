@@ -13,7 +13,7 @@
 	<title>Calculator</title>
 </head>
 
-<body>
+<body class="bg-light">
 	<div class="container d-flex justify-content-center align-items-center w-50" style="height: 100vh;">
 		<br>
 		<table class="table table-bordered">
@@ -21,51 +21,51 @@
 				<td colspan="4">
 					<div class="">
 						<input type="text" id="result" class="btn-lg w-100 p-4" readonly>
-						<div class="btn-lg w-100 p-4" readonly>First Press AC</div>
+						<div class="btn-lg w-100 p-4" readonly>Note:- Kindly Press AC.</div>
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<div class="">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('AC')">AC</button>
+						<button class="btn-danger btn-lg w-100 p-3" onclick="getNum('AC')">AC</button>
 					</div>
 				</td>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('&#40;')">(</button>
+						<button class="btn-secondary btn-lg w-100 p-3" onclick="getNum('&#40;')">(</button>
 					</div>
 				</td>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('&#41;')">)</button>
+						<button class="btn-secondary btn-lg w-100 p-3" onclick="getNum('&#41;')">)</button>
 					</div>
 				</td>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('/')">/</button>
+						<button class="btn-secondary btn-lg w-100 p-3" onclick="getNum('Math.PI')">&pi;</button>
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('Math.log')">log</button>
+						<button class="btn-secondary btn-lg w-100 p-3" onclick="getNum('Math.log')">log</button>
 					</div>
 				</td>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('Math.PI')">&pi;</button>
+						<button class="btn-secondary btn-lg w-100 p-3" onclick="getNum('Math.cos')">cos</button>
 					</div>
 				</td>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('Math.sin')">sin</button>
+						<button class="btn-secondary btn-lg w-100 p-3" onclick="getNum('Math.sin')">sin</button>
 					</div>
 				</td>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('Math.cos')">cos</button>
+						<button class="btn-primary btn-lg w-100 p-3" onclick="getNum('/')">/</button>
 					</div>
 				</td>
 			</tr>
@@ -87,7 +87,7 @@
 				</td>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('*')">X</button>
+						<button class="btn-primary btn-lg w-100 p-3" onclick="getNum('*')">X</button>
 					</div>
 				</td>
 			</tr>
@@ -109,7 +109,7 @@
 				</td>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('-')">-</button>
+						<button class="btn-primary btn-lg w-100 p-3" onclick="getNum('-')">-</button>
 					</div>
 				</td>
 			</tr>
@@ -131,7 +131,7 @@
 				</td>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('+')">+</button>
+						<button class="btn-primary btn-lg w-100 p-3" onclick="getNum('+')">+</button>
 					</div>
 				</td>
 			</tr>
@@ -148,7 +148,7 @@
 				</td>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('C')"><svg
+						<button class="btn-danger btn-lg w-100 p-3" onclick="getNum('C')"><svg
 								xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 								class="bi bi-backspace-fill" viewBox="0 0 16 16">
 								<path
@@ -160,7 +160,7 @@
 				</td>
 				<td>
 					<div class="d-flex flex-row">
-						<button class="btn-dark btn-lg w-100 p-3" onclick="getNum('=')">=</button>
+						<button class="btn-success btn-lg w-100 p-3" onclick="getNum('=')">=</button>
 					</div>
 				</td>
 			</tr>
