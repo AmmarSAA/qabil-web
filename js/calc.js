@@ -9,6 +9,7 @@ function getNum(num) {
         //remove last number
         case 'C':
             var currentResult = document.getElementById("result").value;
+            document.getElementById('result').value = document.getElementById("result").value.slice(0, currentResult.length - 1);
             console.log(document.getElementById("result").value.slice(0, currentResult.length - 1));
             break;
 
@@ -35,7 +36,7 @@ function getNum(num) {
 
         //calculate &pi
         case '&pi;':
-            console.log(document.getElementById("result").value = Math.PI(document.getElementById("result").value));
+            console.log(document.getElementById("result").value += Math.PI);
             break;
 
         //shows num on screen
