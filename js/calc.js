@@ -19,26 +19,6 @@ function getNum(num) {
             console.log(document.getElementById('result').value);
             break;
 
-        //calculate sin
-        case 'sin':
-            console.log(document.getElementById("result").value = Math.sin(document.getElementById("result").value));
-            break;
-
-        //calculate cos
-        case 'cos':
-            console.log(document.getElementById("result").value = Math.cos(document.getElementById("result").value));
-            break;
-
-        //calculate log
-        case 'log':
-            console.log(document.getElementById("result").value = Math.log(document.getElementById("result").value));
-            break;
-
-        //calculate &pi
-        case '&pi;':
-            console.log(document.getElementById("result").value += Math.PI);
-            break;
-
         //shows num on screen
         default:
             console.log(document.getElementById('result').value += num);
