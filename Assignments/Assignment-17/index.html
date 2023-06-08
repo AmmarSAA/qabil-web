@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th,
+		td {
+			border: 1px solid #ccc;
+			padding: 8px;
+			text-align: left;
+		}
+
+		.hidden-form {
+			display: none;
+		}
+
+		.item {
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+
+		.full-details {
+			display: none;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	Assignment -17 <br />
+
+	<h2>Signup Form</h2>
+	<form id="signupForm">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required><br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2>Form Data</h2>
+	<div id="formData"></div>
+	<br />
+
+
+
+
+	<div class="item">
+		<h2>Item 1</h2>
+		<p>Some brief details about Item 1.</p>
+		<p class="full-details">Full details about Item 1.</p>
+		<button onclick="toggleDetails(this)">Read More</button>
+	</div>
+
+	<div class="item">
+		<h2>Item 2</h2>
+		<p>Some brief details about Item 2.</p>
+		<p class="full-details">Full details about Item 2.</p>
+		<button onclick="toggleDetails(this)">Read More</button>
+	</div>
+	<br />
+
+
+
+	
+	<h2>Student Details</h2>
+
+	<form id="studentForm">
+		<label for="stdntName">Name:</label>
+		<input type="text" id="stdntName" name="stdntName" required><br>
+
+		<label for="stdntClass">Class:</label>
+		<input type="text" id="stdntClass" name="stdntClass" required><br>
+
+		<input type="submit" value="Add Student">
+	</form>
+
+	<table id="studentTable">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Class</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+
+	<form id="updateForm" class="hidden-form">
+		<input type="hidden" id="updateId" name="updateId">
+		<label for="updateName">Name:</label>
+		<input type="text" id="updateName" name="updateName" required><br>
+
+		<label for="updateClass">Class:</label>
+		<input type="text" id="updateClass" name="updateClass" required><br>
+
+		<button type="submit">Update Student</button>
+		<button type="button" onclick="cancelUpdate()">Cancel</button>
+	</form>
+
+
+	<script src="./app.js">
+	</script>
+</body>
+
+</html>
