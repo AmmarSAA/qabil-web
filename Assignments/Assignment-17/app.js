@@ -5,30 +5,30 @@ const form = document.getElementById("signupForm");
 const formDataDiv = document.getElementById("formData");
 
 form.addEventListener("submit", function (event) {
-    event.preventDefault();
+	event.preventDefault();
 
-    const name = form.elements["name"].value;
-    const email = form.elements["email"].value;
-    const password = form.elements["password"].value;
+	const name = form.elements["name"].value;
+	const email = form.elements["email"].value;
+	const password = form.elements["password"].value;
 
-    const formData = `Name: ${name}<br>Email: ${email}<br>Password: ${password}<br><br>`;
-    formDataDiv.innerHTML += formData;
+	const formData = `Name: ${name}<br>Email: ${email}<br>Password: ${password}<br><br>`;
+	formDataDiv.innerHTML += formData;
 
-    form.reset();
+	form.reset();
 });
 
 //2.
 function toggleDetails(button) {
-    const item = button.parentNode;
-    const fullDetails = item.querySelector(".full-details");
+	const item = button.parentNode;
+	const fullDetails = item.querySelector(".full-details");
 
-    if (fullDetails.style.display === "none") {
-        fullDetails.style.display = "block";
-        button.textContent = "Read Less";
-    } else {
-        fullDetails.style.display = "none";
-        button.textContent = "Read More";
-    }
+	if (fullDetails.style.display === "none") {
+		fullDetails.style.display = "block";
+		button.textContent = "Read Less";
+	} else {
+		fullDetails.style.display = "none";
+		button.textContent = "Read More";
+	}
 }
 
 //3.

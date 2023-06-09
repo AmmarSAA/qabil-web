@@ -137,7 +137,7 @@ for (let i = 0; i < devices.length; i++) {
 var devices = ["keyboard", "mouse", "printer", "monitor"];
 //LIFO
 for (let i = 0; i < devices.length; i++) {
-    option = devices.length - (i+1);
+    option = devices.length - (i + 1);
     const element = devices[option];
     document.write("Out: " + element + "<br/>");
 
@@ -149,7 +149,7 @@ var manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
 document.write("<select>");
 //Loop in manufuctureres for each value
 for (var i = 0; i < manufacturers.length; i++) {
-  document.write("<option>" + manufacturers[i] + "</option>");
+    document.write("<option>" + manufacturers[i] + "</option>");
 }
 //End dropdown menu
 document.write("</select>");

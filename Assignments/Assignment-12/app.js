@@ -52,7 +52,7 @@ if (randomValue <= 0) {
 }
 
 //Display result
-document.write("<br/>"+randomValue);
+document.write("<br/>" + randomValue);
 document.write("<br/>Random coin value: " + tossResult);
 
 //6.
@@ -78,10 +78,10 @@ var usrGuess;
 console.log(secretNo);
 //take user input and gives suitable output
 usrGuess = prompt("Guess the Secret Number from a Range of 1-10:");
-if (usrGuess === secretNo){
-	alert("Congatulations! You have guessed the secret num");
-    document.write("<br/>Congatulations! You have guessed the secret num");
-}else {
-	alert("Try again!");
-    document.write("<br/>Try again!");
+if (usrGuess === secretNo) {
+  alert("Congatulations! You have guessed the secret num");
+  document.write("<br/>Congatulations! You have guessed the secret num");
+} else {
+  alert("Try again!");
+  document.write("<br/>Try again!");
 }

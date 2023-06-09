@@ -27,11 +27,11 @@ document.write("<br/>");
 //2.
 // i.
 const formContentNode = document.getElementById("form-content");
-document.write("What is node type of element having id “form-content”?: "+formContentNode.nodeType);
+document.write("What is node type of element having id “form-content”?: " + formContentNode.nodeType);
 document.write("<br/>");
 // ii.
 const lastNameNode = document.getElementById("lastName");
-document.write("Show node type of element having id “lastName” and its child node.: "+lastNameNode.nodeType+", "+lastNameNode.childNodes[0].nodeType);
+document.write("Show node type of element having id “lastName” and its child node.: " + lastNameNode.nodeType + ", " + lastNameNode.childNodes[0].nodeType);
 document.write("<br/>");
 // iii.
 lastNameNode.childNodes[0].nodeValue = "Last Name: Smith";
@@ -40,16 +40,16 @@ document.write("<br/>");
 const mainContentElement = document.getElementById("main-content");
 const firstChild = mainContentElement.firstChild;
 const lastChild = mainContentElement.lastChild;
-document.write("Get First and last child of id “main-content”.:" + firstChild +", " + lastChild)
+document.write("Get First and last child of id “main-content”.:" + firstChild + ", " + lastChild)
 document.write("<br/>");
 // v.
 const lastNameElement = document.getElementById("lastName");
 const nextSibling = lastNameElement.nextSibling;
 const previousSibling = lastNameElement.previousSibling;
-document.write("Get next and previous siblings of id “lastName”.:" + nextSibling +", " + previousSibling);
+document.write("Get next and previous siblings of id “lastName”.:" + nextSibling + ", " + previousSibling);
 document.write("<br/>");
 // vi.
 const emailElement = document.getElementById("email");
 const parentNode = emailElement.parentNode;
-document.write("Get parent node and node type of element having id “email”.:" + parentNode +", " + emailElement.nodeType);
+document.write("Get parent node and node type of element having id “email”.:" + parentNode + ", " + emailElement.nodeType);
 document.write("<br/>");

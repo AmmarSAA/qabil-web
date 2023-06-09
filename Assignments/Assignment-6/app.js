@@ -39,7 +39,7 @@ var a = 2, b = 1;
 var result = --a;
 
 var output = heading;
-output +=  hr;
+output += hr;
 output += "A is: " + a + br;
 output += "B is: " + b + br;
 output += "Result is: " + result + br;
@@ -48,7 +48,7 @@ var a = 2, b = 1;
 result = --a - --b;
 
 output += heading;
-output +=  hr;
+output += hr;
 output += "A is: " + a + br;
 output += "B is: " + b + br;
 output += "Result is: " + result + br;
@@ -57,7 +57,7 @@ var a = 2, b = 1;
 result = --a - --b + ++b;
 
 output += heading;
-output +=  hr;
+output += hr;
 output += "A is: " + a + br;
 output += "B is: " + b + br;
 output += "Result is: " + result + br;
@@ -66,7 +66,7 @@ var a = 2, b = 1;
 result = --a - --b + ++b + b--;
 
 output += heading;
-output +=  hr;
+output += hr;
 output += "A is: " + a + br;
 output += "B is: " + b + br;
 output += "Result is: " + result + br;

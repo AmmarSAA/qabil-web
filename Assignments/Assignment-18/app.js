@@ -10,7 +10,7 @@ const modalImage = document.getElementById('modalImage');
 const closeButton = document.getElementsByClassName('close')[0];
 
 // Add click event listeners to each image in the gallery
-imageGallery.addEventListener('click', function(event) {
+imageGallery.addEventListener('click', function (event) {
   if (event.target.classList.contains('gallery-image')) {
     const clickedImageSrc = event.target.getAttribute('src');
     modalImage.setAttribute('src', clickedImageSrc);
@@ -19,7 +19,7 @@ imageGallery.addEventListener('click', function(event) {
 });
 
 // Close the modal when the close button is clicked
-closeButton.addEventListener('click', function() {
+closeButton.addEventListener('click', function () {
   modal.style.display = 'none';
 });
 
@@ -31,14 +31,14 @@ const zoomOutButton = document.getElementById('zoomOutBtn');
 const zoomParagraph = document.getElementById('zoomParagraph');
 
 // Zoom in button click event listener
-zoomInButton.addEventListener('click', function() {
+zoomInButton.addEventListener('click', function () {
   const currentFontSize = parseInt(window.getComputedStyle(zoomParagraph).fontSize);
   const newFontSize = currentFontSize + 10;
   zoomParagraph.style.fontSize = newFontSize + 'px';
 });
 
 // Zoom out button click event listener
-zoomOutButton.addEventListener('click', function() {
+zoomOutButton.addEventListener('click', function () {
   const currentFontSize = parseInt(window.getComputedStyle(zoomParagraph).fontSize);
   const newFontSize = currentFontSize - 10;
   zoomParagraph.style.fontSize = newFontSize + 'px';
